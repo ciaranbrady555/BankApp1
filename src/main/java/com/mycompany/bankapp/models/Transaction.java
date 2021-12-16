@@ -15,7 +15,7 @@ public class Transaction {
     private int transId;
     private Date transactionDate;
     private String description;
-    private int balancechange;
+    private double balancechange;
     
     private List<Transaction> transactions = new ArrayList<>();
     
@@ -55,11 +55,11 @@ public class Transaction {
         this.description = description;
     }
     
-    public int getBChange(){
+    public double getBChange(){
         return balancechange;
     }
     
-    public void setBChange(int balancechange){
+    public void setBChange(double balancechange){
         this.balancechange = balancechange;
     }
     
